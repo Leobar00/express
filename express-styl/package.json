@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "sass": "node-sass -w resource/sass/style.scss public/stylesheets/style.css -output-style compressed"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,6 +13,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
+    "node-sass-middleware": "^0.11.0",
     "twig": "^1.15.4"
   }
 }
